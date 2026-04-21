@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lo de TITA — Almacén &amp; Bar de Pueblo</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,700;1,400;1,700&amp;family=Work+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-primary": "#ffb4a9",
+                    "error": "#ba1a1a",
+                    "surface-tint": "#a03f34",
+                    "primary-fixed": "#ffdad5",
+                    "on-error-container": "#93000a",
+                    "surface-container-highest": "#f0e0d3",
+                    "surface": "#fff8f4",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed-dim": "#b4ccc4",
+                    "on-tertiary-container": "#dda556",
+                    "on-tertiary": "#ffffff",
+                    "surface-variant": "#f0e0d3",
+                    "background": "#fff8f4",
+                    "primary": "#5c0d09",
+                    "secondary-fixed": "#d0e8e0",
+                    "primary-container": "#7b241c",
+                    "on-primary-fixed": "#410001",
+                    "on-secondary-fixed-variant": "#364b45",
+                    "surface-container-low": "#fff1e7",
+                    "surface-container-high": "#f6e5d8",
+                    "secondary": "#4d635d",
+                    "on-primary-container": "#ff9183",
+                    "on-surface": "#221a12",
+                    "on-tertiary-fixed-variant": "#633f00",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-fixed": "#ffddb3",
+                    "secondary-container": "#cde5dd",
+                    "on-primary-fixed-variant": "#80281f",
+                    "inverse-surface": "#382f26",
+                    "on-secondary-fixed": "#091f1b",
+                    "outline-variant": "#dcc0bc",
+                    "on-surface-variant": "#56423f",
+                    "tertiary-container": "#5d3c00",
+                    "error-container": "#ffdad6",
+                    "tertiary": "#402800",
+                    "primary-fixed-dim": "#ffb4a9",
+                    "on-error": "#ffffff",
+                    "surface-dim": "#e7d7ca",
+                    "on-secondary-container": "#516761",
+                    "outline": "#89726e",
+                    "on-secondary": "#ffffff",
+                    "inverse-on-surface": "#ffeee1",
+                    "tertiary-fixed-dim": "#f6bc6a",
+                    "surface-bright": "#fff8f4",
+                    "on-tertiary-fixed": "#291800",
+                    "surface-container": "#fcebde",
+                    "on-background": "#221a12"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Work Sans", "sans-serif"],
+                    "label": ["Work Sans", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: "Work Sans", sans-serif;
+            background-color: #fff8f4;
+            color: #221a12
+        }
+        .font-serif {
+            font-family: "Newsreader", serif
+        }
+        .material-symbols-outlined {
+            font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
+        }
+        .bg-grain {
+            background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuB_Lea8-6VL8ZrHY2HGuL-FJzpUJIVtG6QoP2DldUa1wEzt3uOv9RTHbCklfbducmbc1FdfNFHHg4ihqTrNZ0aJj5TwKASd3rAv-C5ahYBZbI5PszgY_G8JW7BElY-xWby9sqWO1dRcM2KiZzKtOCjex87scGqNGnW06F089OhviZylm9ngKHbdOlhoHl6krrUdrSRiNHstfljVv1NqE-detuSQAq8_OFaSm4wARiGdCYYNUfFaoIYXSfrDyv8YW8NlruIxxyrvQLE)
+        }
+    </style>
+</head>
+<body class="bg-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fff8f4]/80 backdrop-blur-md transition-colors duration-500 border-b border-outline-variant/10">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-8xl mx-auto">
+<a class="flex items-center gap-3" href="#">
+<img alt="Logo Lo de TITA" class="h-12 w-12 object-cover rounded-md shadow-sm" src="https://lh3.googleusercontent.com/aida/ADBb0ug4D8o56czUa7vPUImFoXRQ0QaRmXrvVrxzHwwpCxb0pxczr1G1IOZHNf5oFFygKIDY6E0iUeHjUaepflXWXTyQn1_2EQ2OMWYE9B6F0gfK7gLSWLoNVEsYUAWxXKjfY7eWWiyL7BsHzF58Rf6qZd9Wpx7BXE5-uezq9EKF_mYLnn0A0K8XLd55A0pENIHC8K_x_rDsjupHZoOGLoZXoSipW1j1aNSxIRpfMpONYX5jdkTOYjQ9kTWuvA"/>
+<span class="text-2xl font-serif font-bold text-[#5c0d09] uppercase tracking-tighter">Lo de TITA</span>
+</a>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-[#89726e] font-['Work_Sans'] font-medium uppercase text-sm tracking-widest hover:text-[#5c0d09] transition-all" href="#historia">Nuestra Historia</a>
+<a class="text-[#89726e] font-['Work_Sans'] font-medium uppercase text-sm tracking-widest hover:text-[#5c0d09] transition-all" href="#almacen">El Almacén</a>
+<a class="text-[#89726e] font-['Work_Sans'] font-medium uppercase text-sm tracking-widest hover:text-[#5c0d09] transition-all" href="#menu">El Menú</a>
+<a class="text-[#89726e] font-['Work_Sans'] font-medium uppercase text-sm tracking-widest hover:text-[#5c0d09] transition-all" href="#contacto">Contacto</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-label font-semibold text-sm uppercase tracking-wider hover:scale-95 duration-300 ease-in-out">
+                Reservar Mesa
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[90vh] pt-32 pb-20 px-8 flex flex-col items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0 opacity-10 bg-grain"></div>
+<div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 z-10">
+<img alt="Logo Lo de TITA" class="w-40 mb-8 opacity-95 drop-shadow-sm rounded-lg" src="https://lh3.googleusercontent.com/aida/ADBb0ug4D8o56czUa7vPUImFoXRQ0QaRmXrvVrxzHwwpCxb0pxczr1G1IOZHNf5oFFygKIDY6E0iUeHjUaepflXWXTyQn1_2EQ2OMWYE9B6F0gfK7gLSWLoNVEsYUAWxXKjfY7eWWiyL7BsHzF58Rf6qZd9Wpx7BXE5-uezq9EKF_mYLnn0A0K8XLd55A0pENIHC8K_x_rDsjupHZoOGLoZXoSipW1j1aNSxIRpfMpONYX5jdkTOYjQ9kTWuvA"/>
+<h1 class="font-serif italic text-6xl md:text-8xl text-primary leading-[0.9] tracking-tighter mb-6">
+                        Volver el <br/>tiempo atrás <br/>en Abbott
+                    </h1>
+<p class="font-body text-xl md:text-2xl text-on-surface-variant max-w-lg mb-8 leading-relaxed">
+                        Picadas, regionales y el sabor de lo auténtico en un rincón de historia que late en el corazón de la pampa.
+                    </p>
+<div class="flex gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-lg font-bold uppercase tracking-widest text-sm hover:bg-primary-container transition-colors">
+                            Ver Carta del Día
+                        </button>
+</div>
+</div>
+<div class="lg:col-span-5 relative mt-12 lg:mt-0">
+<div class="aspect-[4/5] relative z-10 rounded-xl overflow-hidden shadow-2xl transform lg:rotate-3 hover:rotate-0 transition-transform duration-700">
+<img alt="Fachada Lo de TITA" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0ugcSTiCEHSr4c-UzK3xL9qx6O8uVe0pBmZvOhLgBrfdVmxIyJKI5SLEpbhKe8-7qqDVHA1hhmG5rDNyuU7VP6T65EgrLpCNskEgnzCv5XRsAHkv-mZlwJ-YPTG4NZIb_PXFCPH8-ZpEiTr_F6vOLBxAFKE7z-IUEh6qsfoLF28fcUs1wRzIUeGXaXqQOgV_SQW31yc9s_Z7Naa7ZIhm2CNyxWoS0DGfT9glou5Ba1pbUvcbYj4UiMTVntKxxUJ7RRIRO30Qj1IjSw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+</div>
+<div class="absolute -bottom-6 -left-6 w-32 h-32 bg-secondary-container rounded-full z-20 flex items-center justify-center text-on-secondary-container shadow-inner rotate-12">
+<span class="font-serif italic text-4xl">1890</span>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-surface-container-low py-24 px-8 relative overflow-hidden" id="historia">
+<div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="order-2 lg:order-1 relative">
+<div class="bg-surface-container-highest p-4 rounded-lg shadow-lg rotate-[-2deg]">
+<img alt="Interior Almacén" class="w-full h-[600px] object-cover rounded-sm" src="https://lh3.googleusercontent.com/aida/ADBb0uhXkPTen4JwPsY0kbDCZ5tTWTfQB98ZxOiD_8NFs9pirIBmNboxhflwy0ZQc0QrSC2HoFI2GY4y0d7BLeU33otRiegIaGI1eaji7ppexZagQm7XDOu_jmkRlGKknaJY5enxLQ3cYTtEhHuyWsbpt_FFPxPKNa6TVO05mPkhg8x-eXO2wNzYuDFyL75Qloc-CoEm2PyjUMRvTW731h12I6_elMDNI0Gafooam_6B-iPnO9XRQEAi9eGOu04r5RzmEhW5ZTCc7CUweg"/>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<span class="font-label uppercase tracking-[0.4em] text-primary text-xs font-bold mb-4 block">Tradición Viva</span>
+<h2 class="font-serif text-5xl text-primary mb-8 leading-tight">Nuestra Historia</h2>
+<div class="space-y-6 font-body text-lg text-on-surface-variant leading-loose">
+<p>
+                            En las calles tranquilas de Abbott, donde el tiempo parece haberse detenido por respeto a la siesta, se alza <span class="font-bold italic text-primary">Lo de TITA</span>. Lo que comenzó como un almacén de ramos generales a finales del siglo XIX, hoy permanece como el último refugio del encuentro genuino.
+                        </p>
+<p>
+                            Nuestras paredes de ladrillo visto y estanterías de madera maciza guardan el eco de conversaciones de paisanos, viajeros y soñadores que han pasado por aquí durante más de un siglo buscando un trago de caña o el mejor queso de la región.
+                        </p>
+<div class="pt-8 flex items-center gap-4">
+<span class="h-[1px] w-12 bg-primary"></span>
+<p class="font-serif italic text-2xl text-primary">"Aquí el forastero es amigo y el amigo es familia."</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-surface py-24 px-8" id="almacen">
+<div class="max-w-6xl mx-auto text-center mb-16">
+<h2 class="font-serif text-5xl text-primary mb-4">El Almacén y Sabores</h2>
+<p class="font-body text-xl text-on-surface-variant">Quesos, Chorizos y Dulces: El tesoro de San Miguel del Monte.</p>
+</div>
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-6">
+<div class="md:col-span-8 bg-surface-container-highest rounded-xl overflow-hidden group">
+<div class="h-[450px] relative overflow-hidden">
+<img alt="El Mostrador de Tita" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/ADBb0ujgKgEYmAEghmSm8QaRtkjWPGhI7v6bMtx2uap51qXC1P-rGhexVTWh_5lQ4b5DmBPLi9g2ppSgpJib5vL_q9LTuAkc6Lkp8A7FhRJVPzC-Vlxs4fraxjR1b5gZTCCik4NVRRZAfyXQrDKfiz4du4WGoMNXtn5gZGfKUpgNtByGGPZhu1C9st9giIlcTad1DMzzPbwp-DR5qS7cqGECp0oIBTYnF8U_y_vmEN3-mKW2cdP6v3FfLCpqtrM-7Pz0ccbSOHtjJr1LkA"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-500"></div>
+<div class="absolute bottom-8 left-8 text-white">
+<h3 class="font-serif text-3xl mb-2 italic">Selección del Almacenero</h3>
+<p class="font-body text-sm uppercase tracking-widest opacity-80">Productos de la región seleccionados a mano</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-4 bg-tertiary-container text-on-tertiary-container p-8 flex flex-col justify-center rounded-xl">
+<span class="material-symbols-outlined text-4xl mb-4">restaurant_menu</span>
+<h3 class="font-serif text-2xl mb-4">Embutidos Caseros</h3>
+<p class="font-body opacity-90 leading-relaxed">Chorizos secos, bondiolas curadas en el pueblo y quesos de campo que llevan el sol de la pampa en su sabor.</p>
+</div>
+<div class="md:col-span-4 bg-secondary-container text-on-secondary-container p-8 rounded-xl flex flex-col justify-between h-[300px]">
+<h3 class="font-serif text-2xl italic">Dulces &amp; Conservas</h3>
+<p class="font-body opacity-90">Mermeladas de higo, zapallo en almíbar y dulces de leche que se cocinan a fuego lento, como antes.</p>
+<a class="font-label font-bold uppercase text-xs tracking-widest border-b border-current pb-1 w-fit" href="#">Ver Catálogo</a>
+</div>
+<div class="md:col-span-8 bg-surface-container-high rounded-xl overflow-hidden group">
+<div class="h-[300px] flex items-center justify-center p-12 relative">
+<div class="absolute inset-0 opacity-20 bg-grain"></div>
+<div class="relative z-10 text-center">
+<span class="material-symbols-outlined text-5xl text-primary mb-4" style="font-variation-settings: 'FILL' 1;">star</span>
+<p class="font-serif text-3xl text-primary italic max-w-md">"Lo auténtico no se fabrica, se hereda."</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-surface-container-highest py-24 px-8" id="menu">
+<div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+<div class="lg:w-1/2">
+<span class="font-label uppercase tracking-[0.4em] text-primary text-xs font-bold mb-4 block">De Nuestro Horno</span>
+<h2 class="font-serif text-6xl text-primary mb-8 tracking-tighter">La Especialidad</h2>
+<ul class="space-y-8">
+<li class="flex justify-between items-end gap-4 group">
+<div>
+<h4 class="font-serif text-2xl text-primary group-hover:italic transition-all">Picada "Don Pedro"</h4>
+<p class="text-on-surface-variant font-body">Variedad de quesos, salamines, aceitunas y pan casero.</p>
+</div>
+<span class="text-primary font-bold font-body">$8.500</span>
+</li>
+<li class="flex justify-between items-end gap-4 group">
+<div>
+<h4 class="font-serif text-2xl text-primary group-hover:italic transition-all">Sándwich de Bondiola</h4>
+<p class="text-on-surface-variant font-body">En pan de campo, cocida a la leña con guarnición.</p>
+</div>
+<span class="text-primary font-bold font-body">$6.200</span>
+</li>
+<li class="flex justify-between items-end gap-4 group">
+<div>
+<h4 class="font-serif text-2xl text-primary group-hover:italic transition-all">Empanadas de la Casa</h4>
+<p class="text-on-surface-variant font-body">Carne cortada a cuchillo, fritas en grasa de pella.</p>
+</div>
+<span class="text-primary font-bold font-body">$1.200</span>
+</li>
+</ul>
+<button class="mt-12 border-2 border-primary text-primary px-8 py-3 rounded-lg font-bold uppercase tracking-widest text-sm hover:bg-primary hover:text-white transition-all">
+                        Reservar para el Fin de Semana
+                    </button>
+</div>
+<div class="lg:w-1/2 relative">
+<div class="relative z-10 rounded-xl overflow-hidden shadow-2xl">
+<img alt="Patio y Horno" class="w-full h-[500px] object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0uhP7Jslb8Ze9fultMbzoNy6Q5EnoB9sJjmQ6ucRx8dGzFSn6zT_ZF7M10M-bNQ3kzfm1n-LNe0HqReYpASL7LGQk-k7LotZA9PzAHKx--48fuHhoI7K09-PF3B6EDIhJx1bVviqZzLYS0SHskQXSFab6mRztQCMiEU3S4hcwGZMFOMWpI1SCPUO14a8Lg4UI2n5ZwW9BWytBkd88JUZE6EKj-u90YQOB1S66M2C-RE84xKhy3vByQI9MTbeot8NVDgInLUa0FJwvA"/>
+</div>
+<div class="absolute -top-10 -right-10 bg-primary p-8 rounded-lg text-on-primary shadow-xl z-20 max-w-[200px] transform -rotate-6">
+<span class="material-symbols-outlined text-3xl mb-2">local_fire_department</span>
+<p class="font-serif italic text-xl">Sabor a Leña</p>
+<p class="font-body text-xs mt-2 opacity-80">Cocina tradicional en horno de barro.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-surface py-24 px-8 border-t border-outline-variant/20" id="contacto">
+<div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="font-serif text-4xl text-primary mb-6">Ubicación</h2>
+<p class="font-body text-xl text-on-surface mb-8">
+                        Encontranos en el pueblo de Abbott, Partido de San Miguel del Monte. A solo 90km de la Capital, un mundo de distancia en calma.
+                    </p>
+<div class="space-y-4">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<div>
+<p class="font-bold font-body">Calle Principal S/N</p>
+<p class="text-on-surface-variant font-body">Abbott, Buenos Aires, Argentina</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<div>
+<p class="font-bold font-body">Viernes a Domingos</p>
+<p class="text-on-surface-variant font-body">10:00 — 00:00 hs.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">call</span>
+<div>
+<p class="font-bold font-body">+54 (2226) 450-XXXX</p>
+</div>
+</div>
+</div>
+</div>
+<div class="h-[400px] bg-surface-container-low rounded-xl overflow-hidden relative shadow-inner">
+<img alt="Patio Exterior" class="w-full h-full object-cover grayscale brightness-90 contrast-125" src="https://lh3.googleusercontent.com/aida/ADBb0ug-10pXHOHs2tG_6nwY6ymhqZZqEoReH3namikahK7tf6-0HGOPzzbf709S29pk9hnjZIqwU1j75dmaokks2D7GdN6ZUPQ9aQ9u0bEfh0v89eYjUzQKZi-752uj4eHfsAA-uLGt36viAuKI-OFsKjfCzI8ffV0zWldK_OzQRV8FDEsyGxpOeaRVGleQpU-dy7qXU-b1NuFw_D0hKQTTrCff7LNLKs1mAImrDoCLc5C6krQK1_lGCef_7WzH4TIYrFL5T5kZLex2"/>
+<div class="absolute inset-0 bg-primary/5"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+<span class="material-symbols-outlined text-primary text-5xl drop-shadow-lg" style="font-variation-settings: 'FILL' 1;">push_pin</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-[#f0e0d3] w-full py-12 px-8 border-t border-primary/10">
+<div class="max-w-8xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-4">
+<img alt="Logo Tita" class="h-10 w-10 object-cover rounded shadow-sm" src="https://lh3.googleusercontent.com/aida/ADBb0ug4D8o56czUa7vPUImFoXRQ0QaRmXrvVrxzHwwpCxb0pxczr1G1IOZHNf5oFFygKIDY6E0iUeHjUaepflXWXTyQn1_2EQ2OMWYE9B6F0gfK7gLSWLoNVEsYUAWxXKjfY7eWWiyL7BsHzF58Rf6qZd9Wpx7BXE5-uezq9EKF_mYLnn0A0K8XLd55A0pENIHC8K_x_rDsjupHZoOGLoZXoSipW1j1aNSxIRpfMpONYX5jdkTOYjQ9kTWuvA"/>
+<div class="text-xl font-serif text-[#5c0d09] font-bold uppercase">
+                    Lo de TITA
+                </div>
+</div>
+<div class="flex gap-8">
+<a class="text-[#89726e] font-['Work_Sans'] text-xs tracking-widest uppercase hover:text-[#5c0d09] underline decoration-dotted transition-all" href="#">El Almacén</a>
+<a class="text-[#89726e] font-['Work_Sans'] text-xs tracking-widest uppercase hover:text-[#5c0d09] underline decoration-dotted transition-all" href="#">Nuestra Historia</a>
+<a class="text-[#89726e] font-['Work_Sans'] text-xs tracking-widest uppercase hover:text-[#5c0d09] underline decoration-dotted transition-all" href="#">Ubicación</a>
+</div>
+<div class="text-[#89726e] font-['Work_Sans'] text-xs tracking-widest uppercase">
+                © 1890 Lo de Tita — Abbott, San Miguel del Monte.
+            </div>
+</div>
+<div class="max-w-8xl mx-auto mt-8 pt-8 border-t border-outline/10 text-center">
+<p class="font-serif italic text-primary/40 text-sm tracking-widest">Desde 1890 preservando el alma del pueblo.</p>
+</div>
+</footer>
+</body></html>
